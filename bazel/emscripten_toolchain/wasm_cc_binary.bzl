@@ -32,7 +32,7 @@ def _wasm_transition_impl(settings, attr):
         "//command_line_option:features": features,
         "//command_line_option:dynamic_mode": "off",
         "//command_line_option:linkopt": linkopts,
-        "//command_line_option:platforms": [],
+        "//command_line_option:platforms": ["@emsdk//:cpu_wasm32", "@emsdk//:cpu_wasm64"],
         "//command_line_option:custom_malloc": "@emsdk//emscripten_toolchain:malloc",
     }
 
